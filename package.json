@@ -4,7 +4,7 @@
   "description": "bin wrapper for react",
   "license": "MIT",
   "scripts": {
-    "postinstall": "eval $(dependencyEnv) && nopam && cat package.json && ls -lh && cat Makefile && make install"
+    "postinstall": "eval $(dependencyEnv) && cat package.json && ls -lh && cat Makefile && make install"
   },
   "engines": {
     "node": ">=0.10.0"
