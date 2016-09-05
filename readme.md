@@ -1,5 +1,5 @@
-# utop-bin
+# react-bin
 
-> Binary wrapper for utop
+> Binary wrapper for react
 
 OS X, Linux (64-bit) binaries are currently [provided]
