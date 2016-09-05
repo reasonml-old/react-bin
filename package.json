@@ -4,7 +4,7 @@
   "description": "bin wrapper for react",
   "license": "MIT",
   "scripts": {
-    "postinstall": "eval $(dependencyEnv) && cat package.json && ls -lh && cat Makefile && make install"
+    "postinstall": "eval $(dependencyEnv) && nopam && make install"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "nopam": "https://github.com/yunxing/nopam.git",
+    "ocamlfind": "https://github.com/npm-opam/ocamlfind",
     "dependency-env": "https://github.com/npm-ml/dependency-env.git"
   }
 }
