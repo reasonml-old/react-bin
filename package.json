@@ -1,0 +1,46 @@
+{
+  "name": "react-bin",
+  "version": "1.2.2",
+  "description": "bin wrapper for react",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "eval $(dependencyEnv) && nopam && make install"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib"
+  ],
+  "exportedEnvVars": {
+      "PATH": {
+          "global": true,
+          "resolveAsRelativePath": true,
+          "globalCollisionBehavior": "joinPath",
+          "val": "./_build/ocamlfind/bin"
+      },
+      "version": {
+          "global": true,
+          "globalCollisionBehavior": "clobber",
+          "val": "1.2.0"
+      },
+      "react_version": {
+          "global": true,
+          "globalCollisionBehavior": "clobber",
+          "val": "1.2.0"
+      },
+      "FINDLIB": {
+          "global": true,
+          "resolveAsRelativePath": true,
+          "globalCollisionBehavior": "joinPath",
+          "val": "./_build/ocamlfind/lib"
+      }
+  },
+  "dependencies": {
+    "nopam": "https://github.com/yunxing/nopam.git",
+    "ocamlfind": "https://github.com/npm-opam/ocamlfind",
+    "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+  }
+}
