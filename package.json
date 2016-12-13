@@ -34,8 +34,8 @@
       }
   },
   "dependencies": {
-    "nopam": "^0.1.0",
+    "nopam": "*",
     "@opam-alpha/ocamlfind": "*",
-    "dependency-env": "^0.0.1"
+    "dependency-env": "*"
   }
 }
